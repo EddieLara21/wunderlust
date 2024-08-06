@@ -66,6 +66,8 @@ table {
     --black: #000000;
 }
 
+/* -----Skip Styles----- */
+
 #skip{
     position: absolute;
     top: auto;
@@ -252,7 +254,7 @@ header p {
     font-size: 40px;
 }
 
-#contact label {
+#contact label, fieldset legend {
     font-size: 20px;
     font-weight: 600;
 }
@@ -338,4 +340,19 @@ input[type="submit"]:hover, input[type="submit"]:focus {
     display: block;
     margin: auto;
     color: var(--black);
+  }
+
+  /* Medium Screen */
+  @media screen and (min-width: 700px) {
+    header { 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+  }
+  /* Large Screen */
+  @media screen and (min-width: 1920px) {
+
+
+
   }

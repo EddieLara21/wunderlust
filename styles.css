@@ -86,15 +86,15 @@ body {
     color: var(--black);
     font-family: var(--fonts);
     font-size: 16px;
-    margin: auto;
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 0;
     padding: 0;
 }
 
   /* -----Header Styles----- */
 header {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 1rem;
+    display: ;
     background-image: linear-gradient(teal, white);
 }
 
@@ -115,22 +115,38 @@ header p {
 }
 
   /* -----Intro Styles----- */
-#intro h2, {
+#intro h2 {
+    padding: 50px 20px 0px;
     font-family: "Molle";
     font-size: 40px;
 }
 
+#intro p {
+    padding: 20px;
+}
+
+#intro img {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+}
+
   /* -----Plan Styles----- */
 #plan {
+    margin: 24px 0;
     background-color: var(--yellow);
 }
 
 #plan h3 {
+    padding: 50px 24px 0px;
     font-family: "Molle";
     font-size: 40px;
 }
 
 #plan section {
+    display: block;
+    justify-content: center;
+    margin: 36px;
     background-color: var(--blue);
     border-style: solid;
     border-width: 3px;
@@ -139,8 +155,15 @@ header p {
 }
 
 #plan h4 {
+    padding: 36px 27px;
     font-size: 26px;
     font-weight: 600;
+}
+
+#plan img {
+    width: 180px;
+    padding: 30px;
+    display: block;
 }
 
   /* -----Testimonials Styles----- */

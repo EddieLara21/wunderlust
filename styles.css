@@ -85,6 +85,7 @@ body {
     background-color: var(--white);
     color: var(--black);
     font-family: var(--fonts);
+    font-size: 16px;
     margin: auto;
     padding: 0;
 }
@@ -103,7 +104,7 @@ header {
 }
 
 header h1 {
-    
+    font-family: "Molle";
     font-size: 50px;
     font-weight: 400;
     font-style: normal;
@@ -112,3 +113,129 @@ header h1 {
 header p {
     font-size: 20px;
 }
+
+  /* -----Intro Styles----- */
+#intro h2, {
+    font-family: "Molle";
+    font-size: 40px;
+}
+
+  /* -----Plan Styles----- */
+#plan {
+    background-color: var(--yellow);
+}
+
+#plan h3 {
+    font-family: "Molle";
+    font-size: 40px;
+}
+
+#plan section {
+    background-color: var(--blue);
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: var(--white);
+}
+
+#plan h4 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+  /* -----Testimonials Styles----- */
+#testimonials h3 {
+    font-family: "Molle";
+    font-size: 40px;
+}
+
+#testimonials h4 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#testimonials p {
+    font-size: 20px;
+}
+
+#testimonials q {
+    font-size: 20px;
+    font-style: italic;
+}
+
+  /* -----About Styles----- */
+#about {
+    background-color: var(--blue);
+}
+
+#about h3 {
+    font-family: "Molle";
+    font-size: 40px;
+}
+
+#about h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#about p {
+    font-size: 20px;
+}
+
+  /* -----Contact Styles----- */
+#contact h3 {
+    font-family: "Molle";
+    font-size: 40px;
+}
+
+form{
+	display: block;
+	width: 300px;
+	padding: 1em;
+	margin: 0 auto;
+	color: #222;
+	font-size: 1.1em;
+}
+
+.form-required {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-style: italic;
+}
+
+input[type=text] {
+    border: 2px solid var(--purple);
+}
+
+input[type=email] {
+    border: 2px solid var(--purple);
+}
+
+input[type=tel] {
+    border: 2px solid var(--purple);
+}
+
+
+
+select {
+    border: 2px solid var(--purple);
+}
+
+input[type=submit]  {
+	color: var(--white);
+	background-color: var(--purple);
+	border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+  /* -----Footer Styles----- */
+
+  footer {
+    background-color: var(--light-gray);
+  }
+
+  footer a {
+    text-decoration: none;
+    color: var(--black);
+  }

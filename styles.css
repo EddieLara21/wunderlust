@@ -122,6 +122,26 @@ header p {
     font-size: 20px;
 }
 
+nav li {
+    text-align: center;
+    padding: 20px;
+}
+
+nav a{
+    display: block;
+    padding: 10px;
+    text-decoration:none;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    background-color: var(--yellow);
+  }
+
   /* -----Intro Styles----- */
 #intro h2 {
     padding: 50px 20px 0px;
@@ -345,14 +365,66 @@ input[type="submit"]:hover, input[type="submit"]:focus {
   /* Medium Screen */
   @media screen and (min-width: 700px) {
     header { 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
     }
 
+    nav {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+
+    #img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 20px;
+    }
+
+    #testimonials div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    #about div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    footer {
+        display: flex;
+    }
   }
   /* Large Screen */
-  @media screen and (min-width: 1920px) {
+  @media screen and (min-width: 1080px) {
+    #intro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
 
+    #intro h2, #intro p {
+        grid-column: 1;
+        grid-row: 1;
+    }
 
+    #intro p {
+        padding-top: 100px;
+    } 
 
+    #plan div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #testimonials div {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #about div {
+        margin: 0 100px;
+    }
+
+   
   }
